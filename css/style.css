@@ -1,0 +1,1269 @@
+/*------------fonts------------*/
+@font-face {
+    font-family: 'Inter-400-Regular';
+    src: url(../fonts/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: 'Inter-100';
+    src: url(../fonts/Inter-Thin.ttf);
+}
+@font-face {
+    font-family: 'Inter-200';
+    src: url(../fonts/Inter-ExtraLight.ttf);
+}
+@font-face {
+    font-family: 'Inter-300';
+    src: url(../fonts/Inter-ExtraLight.ttf);
+}
+@font-face {
+    font-family: 'Inter-500';
+    src: url(../fonts/Inter-Medium.ttf);
+}
+@font-face {
+    font-family: 'Inter-600';
+    src: url(../fonts/Inter-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Inter-700';
+    src: url(../fonts/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: 'Inter-800';
+    src: url(../fonts/Inter-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'Inter-900';
+    src: url(../fonts/Inter-Black.ttf);
+}
+/*------------common styles------------*/
+html {
+    scroll-behavior: smooth;
+}
+body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+    max-width: 100%;
+    margin: 0;
+    overflow: initial;
+}
+a {
+    list-style: none;
+    text-decoration: none;
+}
+* {
+    box-sizing: border-box;
+    transition: all 0.4s;
+}
+.navbar {
+    background-color: transparent !important;
+}
+.section-1 {
+    height: 100vh;
+    background: rgb(255, 230, 234);
+    background: linear-gradient(90deg,
+            rgba(255, 230, 234, 1) 0%,
+            rgba(228, 238, 254, 1) 100%);
+}
+h1 {
+    font-size: 54px;
+    line-height: 73px;
+    font-family: 'Inter-700';
+}
+h2 {
+    font-size: 50px;
+    line-height: 73px;
+    color: black;
+    font-family: 'Inter-800';
+}
+h3 {
+    font-size: 32px;
+    line-height: 40px;
+    color: black;
+    font-family: 'Inter-400-Regular';
+}
+h4 {
+    font-size: 18px;
+    line-height: 40px;
+    color: black;
+    font-family: 'Inter-400-Regular';
+}
+h5 {
+    font-size: 18px;
+    line-height: 40px;
+    color: black;
+    font-family: 'Inter-600';
+}
+h6 {
+    font-size: 12px;
+    line-height: 40px;
+    color: black;
+    font-family: 'Inter-400-Regular';
+}
+.product-section h3 {
+    font-size: 36px;
+    line-height: 40px;
+    color: #ffff;
+    font-family: 'Inter-600';
+}
+.service-section h4 {
+    font-size: 36px;
+    line-height: 40px;
+    color: #ffff;
+    font-family: 'Inter-600';
+}
+.stack-wrap {
+    width: 100px;
+}
+.stack-section {
+    margin-top: 200px;
+}
+.stack-box {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.clr-red {
+    color: red;
+}
+.line {
+    width: 122px;
+    height: 2px;
+    line-height: 106px;
+    background-color: #b3b3b3;
+    transform: rotate(110deg);
+    z-index: 999999;
+    position: relative;
+    bottom: 47px;
+}
+.counts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.count-box {
+    width: 100%;
+    border-radius: 20px;
+    background-color: #fcfcfc;
+    padding: 50px;
+}
+.stack-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.count-box h1 {
+    font-size: 140px;
+    line-height: 126px;
+    color: black;
+    font-family: 'Inter-700';
+    text-transform: uppercase;
+    background: linear-gradient(to right, #ff0e47 18%, #ff8382 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.count-box p {
+    font-size: 25px;
+    line-height: 70px;
+    color: #b3b3b3;
+    font-family: 'Inter-400-Regular';
+}
+.count-section {
+    margin-top: 140px;
+}
+.gap-10 {
+    gap: 10px;
+}
+.client-sect {
+    background-color: #f5f5f5;
+    position: relative;
+    right: 0;
+}
+.width-fit {
+    width: fit-content;
+}
+.service-section p {
+    font-size: 29px;
+    line-height: 40px;
+    color: #ffff;
+    font-family: 'Inter-400-Regular';
+}
+p {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+    font-family: 'Inter-400-Regular';
+}
+.clr-blue {
+    color: #5d39fa;
+}
+.h-88 {
+    height: 100%;
+}
+.android {
+    width: 50px;
+}
+.native {
+    width: 70px;
+}
+.flutter {
+    width: 35px;
+}
+.ionic {
+    width: 45px;
+}
+.text-box-andro {
+    padding-left: 100px !important;
+    gap: 20px;
+}
+.ios-app {
+    width: 40px;
+}
+.ios-mob-1 {
+    width: 220px;
+    position: relative;
+    left: 30px;
+    z-index: 99;
+}
+.ios-mob-2 {
+    width: 273px;
+    position: relative;
+    right: 33px;
+}
+.form-btn {
+    width: 100% !important;
+}
+/*------------common Button------------*/
+.main-button {
+    width: 249px;
+    height: 65px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 31px;
+    border-radius: 10px;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5d39fa;
+    cursor: pointer;
+    font-family: 'Inter-400-Regular';
+}
+/*------------Section-1------------*/
+.navbar-brand {
+    font-size: 50px !important;
+    color: #5d39fa;
+}
+.mob-background {
+    width: 736px;
+    height: 738px;
+    background: rgb(202, 208, 239);
+    background: linear-gradient(180deg, rgba(202, 208, 239, 1) 0%, rgba(229, 232, 241, 1) 100%);
+}
+.mob-background-2 {
+    width: 678px;
+    height: 676px;
+    background: rgb(202, 208, 239);
+    background: linear-gradient(180deg, rgb(179 190 249) 0%, rgba(229, 232, 241, 1) 100%);
+}
+.clutch-badge {
+    height: 200px;
+    position: absolute;
+    right: 70px;
+    top: 0;
+}
+.banner-1 {
+    width: 280px;
+    z-index: 99;
+}
+.banner-2 {
+    width: 275px;
+    position: relative;
+    right: 54px;
+}
+.text-service {
+    margin-right: 70px;
+}
+.brand-box {
+    width: 100%;
+    height: 160px;
+    position: relative;
+    bottom: 60px;
+    background-color: white;
+    flex-wrap: wrap;
+}
+.brand-img {
+    width: 120px;
+    object-fit: contain;
+}
+.app-dev-box {
+    width: 100%;
+    padding: 30px;
+}
+.section-3 {
+    padding: 50px 0;
+}
+.app-dev-box-1 {
+    background: rgb(255, 230, 234);
+    background: linear-gradient(270deg,
+            rgba(255, 230, 234, 1) 0%,
+            rgba(228, 238, 254, 1) 100%);
+}
+.app-dev-box-2 {
+    background: rgb(255, 230, 234);
+    background: linear-gradient(90deg,
+            rgba(255, 230, 234, 1) 0%,
+            rgba(228, 238, 254, 1) 100%);
+}
+.mob-background-3 {
+    width: 576px;
+    height: 575px;
+}
+.mob-background-4 {
+    width: 523px;
+    height: 522px;
+}
+.android-mob {
+    width: 200px;
+}
+.section-3 .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.card-img-top {
+    height: 200px;
+    object-fit: contain;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card {
+    width: 100%;
+    border: none;
+}
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 496px;
+}
+.review-box {
+    width: 100%;
+    padding: 100px;
+    margin-top: 100px;
+    background-color: #f1eeff;
+    border-radius: 50px;
+}
+.avatar-box {
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+    padding: 100px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    background-image: url(../img/Quote\ Mark.png);
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.avatar-box h6,
+.avatar-box h4 {
+    line-height: 22px;
+    margin-left: 10px;
+}
+.section-4 .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.product-box {
+    width: 720px;
+    height: 421px;
+    border-radius: 66px;
+    background-color: #5d39fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.product-box-1 {
+    padding-right: 300px;
+    padding-left: 60px;
+}
+.product-box-2 {
+    padding-left: 340px;
+    padding-right: 50px;
+}
+.product-mob-1 {
+    height: 659px;
+    object-fit: contain;
+    position: absolute;
+    right: -97px;
+    bottom: -130px;
+}
+.product-mob-2 {
+    height: 659px;
+    object-fit: contain;
+    position: absolute;
+    left: -97px;
+    bottom: -130px;
+}
+.section-5 {
+    margin-top: 150px;
+}
+.store {
+    width: 200px;
+}
+.service-section a {
+    text-decoration: underline;
+    color: white;
+}
+.service-box {
+    width: 100%;
+    background-color: #7152fb;
+    border-radius: 50px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.fly-img {
+    width: 300px;
+}
+.red-box {
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.bg-red {
+    background-color: red;
+}
+footer {
+    background-color: #5d39fa;
+    width: 100%;
+    height: 297px;
+    margin-top: 100px;
+}
+footer h4 {
+    color: white;
+}
+.link {
+    gap: 100px;
+}
+footer .container .row {
+    gap: 40px;
+}
+footer .container {
+    gap: 60px;
+}
+.service-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+@media (max-width: 1680px) {
+    h5 {
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 55px;
+    }
+    .mob-background {
+        width: 576px;
+        height: 575px;
+    }
+    .mob-background-2 {
+        width: 523px;
+        height: 522px;
+    }
+    .banner-1 {
+        width: 210px;
+        z-index: 99;
+    }
+    .banner-2 {
+        width: 205px;
+        position: relative;
+        right: 33px;
+    }
+    h1 {
+        font-size: 52px;
+        line-height: 60px;
+        font-family: 'Inter-700';
+    }
+    .card-img-top {
+        height: 160px;
+        object-fit: contain;
+    }
+    h5 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 55px;
+    }
+    .card {
+        width: 100%;
+        border: none;
+    }
+    .product-box {
+        width: 100%;
+    }
+    h2 {
+        font-size: 42px;
+        line-height: 73px;
+        color: black;
+        font-family: 'Inter-800';
+    }
+    .count-box h1 {
+        font-size: 110px;
+        line-height: 108px;
+        color: black;
+        font-family: 'Inter-700';
+        text-transform: uppercase;
+        background: linear-gradient(to right, #ff0e47 18%, #ff8382 75%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .avatar-box {
+        width: 100%;
+        justify-content: center;
+        gap: 21px;
+        padding: 53px;
+        background-color: #ffffff;
+        border-radius: 30px;
+        background-image: url(../img/Quote\ Mark.png);
+        background-size: 45%;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    .count-box p {
+        font-size: 17px;
+        line-height: 53px;
+        color: #b3b3b3;
+        font-family: 'Inter-400-Regular';
+    }
+    .service-section h4 {
+        font-size: 27px;
+        line-height: 40px;
+        color: #ffff;
+        font-family: 'Inter-600';
+    }
+    .service-section p {
+        font-size: 22px;
+        line-height: 40px;
+        color: #ffff;
+        font-family: 'Inter-400-Regular';
+    }
+    h3 {
+        font-size: 22px;
+        line-height: 40px;
+        color: black;
+        font-family: 'Inter-400-Regular';
+    }
+}
+@media (min-width: 1600px) {
+    h1 {
+        font-size: 46px;
+        line-height: 54px;
+        font-family: 'Inter-700';
+    }
+    .brand-box {
+        width: 100%;
+        height: 140px;
+        position: relative;
+        bottom: 51px;
+        background-color: white;
+        flex-wrap: wrap;
+    }
+    .ionic {
+        width: 35px;
+    }
+    .flutter {
+        width: 25px;
+    }
+    .native {
+        width: 55px;
+    }
+    .android {
+        width: 40px;
+    }
+    .main-button {
+        width: 240px;
+        height: 55px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 31px;
+        border-radius: 10px;
+        color: #ffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #5d39fa;
+        cursor: pointer;
+        font-family: 'Inter-400-Regular';
+    }
+    .ios-mob-1 {
+        width: 195px;
+        position: relative;
+        left: 30px;
+        z-index: 99;
+    }
+    .ios-mob-2 {
+        width: 240px;
+        position: relative;
+        right: 33px;
+    }
+    .card-img-top {
+        height: 126px;
+        object-fit: contain;
+    }
+    h5 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 35px;
+    }
+    .gap-10 {
+        gap: 5px;
+    }
+    .service-section h4 {
+        font-size: 27px;
+        line-height: 32px;
+        color: #ffff;
+        font-family: 'Inter-600';
+    }
+    h3 {
+        font-size: 22px;
+        line-height: 25px;
+        font-family: 'Inter-400-Regular';
+    }
+    h4 {
+        font-size: 16px;
+        line-height: 30px;
+        color: black;
+        font-family: 'Inter-400-Regular';
+    }
+    .product-mob-1 {
+        height: 597px;
+        object-fit: contain;
+        position: absolute;
+        right: -85px;
+        bottom: -102px;
+    }
+    .product-mob-2 {
+        height: 597px;
+        object-fit: contain;
+        position: absolute;
+        left: -85px;
+        bottom: -102px;
+    }
+    .product-section h3 {
+        font-size: 34px;
+        line-height: 40px;
+        color: #ffff;
+        font-family: 'Inter-600';
+    }
+    h2 {
+        font-size: 39px;
+        line-height: 50px;
+        color: black;
+        font-family: 'Inter-800';
+    }
+}
+@media (min-width: 1700px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1606px;
+    }
+}
+@media (max-width: 1440px) {
+    h1 {
+        font-size: 48px;
+        line-height: 50px;
+        font-family: 'Inter-700';
+    }
+    .clutch-badge {
+        height: 120px;
+        position: absolute;
+        right: 70px;
+        top: 0;
+    }
+    h5 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+    .card-img-top {
+        height: 133px;
+        object-fit: contain;
+    }
+    h4 {
+        font-size: 18px;
+        line-height: 30px;
+        color: black;
+        font-family: 'Inter-400-Regular';
+    }
+    .red-box {
+        width: fit-content;
+        padding: 5px 20px;
+        border-radius: 10px;
+    }
+    .gap-10 {
+        gap: 5px;
+    }
+    .store {
+        width: 146px;
+    }
+    .mob-background {
+        width: 546px;
+        height: 545px;
+    }
+    .mob-background-2 {
+        width: 496px;
+        height: 495px;
+    }
+    .banner-1 {
+        width: 194px;
+        z-index: 99;
+    }
+    .banner-2 {
+        width: 187px;
+        position: relative;
+        right: 32px;
+    }
+    h3 {
+        font-size: 22px;
+        line-height: 30px;
+        color: black;
+        font-family: 'Inter-400-Regular';
+    }
+    .brand-box {
+        width: 100%;
+        height: 125px;
+        position: relative;
+        bottom: 60px;
+        background-color: white;
+        flex-wrap: wrap;
+    }
+    h2 {
+        font-size: 42px;
+        line-height: 50px;
+        font-family: 'Inter-800';
+    }
+    .count-box h1 {
+        font-size: 90px;
+        line-height: 108px;
+        color: black;
+        font-family: 'Inter-700';
+        text-transform: uppercase;
+        background: linear-gradient(to right, #ff0e47 18%, #ff8382 75%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+@media (max-width: 1366px) {
+    .navbar-brand {
+        font-size: 45px !important;
+        color: #5d39fa;
+    }
+    h1 {
+        font-size: 36px;
+        line-height: 40px;
+        font-family: 'Inter-700';
+    }
+    .main-button {
+        width: 230px;
+        height: 50px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 31px;
+        border-radius: 10px;
+        color: #ffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #5d39fa;
+        cursor: pointer;
+        font-family: 'Inter-400-Regular';
+    }
+    h5 {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+    .card-img-top {
+        height: 90px;
+        object-fit: contain;
+    }
+    h4 {
+        font-size: 16px;
+        line-height: 22px;
+        color: black;
+        font-family: 'Inter-400-Regular';
+    }
+    h2 {
+        font-size: 38px;
+        line-height: 40px;
+        font-family: 'Inter-800';
+    }
+    .product-mob-1 {
+        height: 444px;
+        object-fit: contain;
+        position: absolute;
+        right: -66px;
+        bottom: -90px;
+    }
+    .product-mob-2 {
+        height: 444px;
+        object-fit: contain;
+        position: absolute;
+        left: -66px;
+        bottom: -90px;
+    }
+    .product-section h3 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .product-box-1 {
+        padding-right: 238px;
+        padding-left: 38px;
+    }
+    .product-box-2 {
+        padding-left: 241px;
+        padding-right: 50px;
+    }
+    h2 {
+        font-size: 28px;
+        line-height: 36px;
+        font-family: 'Inter-800';
+    }
+    p {
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: -0.4px;
+        font-family: 'Inter-400-Regular';
+    }
+    .cert-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .cert-img {
+        width: 100px;
+    }
+    .service-section h4 {
+        font-size: 22px;
+        line-height: 27px;
+        color: #ffff;
+        font-family: 'Inter-600';
+    }
+    .service-section p {
+        font-size: 18px;
+        line-height: 40px;
+        color: #ffff;
+        font-family: 'Inter-400-Regular';
+    }
+    .product-box {
+        width: 520px;
+        height: 311px;
+        border-radius: 66px;
+        background-color: #5d39fa;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+    .brand-box {
+        width: 100%;
+        height: 100px;
+        position: relative;
+        bottom: 40px;
+        background-color: white;
+        flex-wrap: wrap;
+    }
+    .mob-background {
+        width: 454px;
+        height: 453px;
+    }
+    .mob-background-2 {
+        width: 365px;
+        height: 364px;
+    }
+    .banner-1 {
+        width: 153px;
+        z-index: 99;
+    }
+    .banner-2 {
+        width: 152px;
+        position: relative;
+        right: 32px;
+    }
+    .android-mob {
+        width: 137px;
+    }
+    .mob-background-4 {
+        width: 363px;
+        height: 362px;
+    }
+    .mob-background {
+        width: 405px;
+        height: 404px;
+    }
+    .text-box-andro {
+        padding-left: 60px !important;
+        gap: 20px;
+    }
+    .ios-mob-2 {
+        width: 175px;
+        position: relative;
+        right: 23px;
+    }
+    .ios-mob-1 {
+        width: 144px;
+        position: relative;
+        left: 30px;
+        z-index: 99;
+    }
+    .ionic {
+        width: 28px;
+    }
+    .flutter {
+        width: 20px;
+    }
+    .native {
+        width: 53px;
+    }
+    .android {
+        width: 36px;
+    }
+    .main-button {
+        width: 209px;
+        height: 44px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .stack-wrap {
+        width: 180px;
+    }
+}
+@media (max-width: 1280px) {
+    .home-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column-reverse;
+    }
+    .brand-img {
+        width: 80px;
+        object-fit: contain;
+    }
+    h3 {
+        font-size: 16px;
+        line-height: 30px;
+        color: black;
+        font-family: 'Inter-400-Regular';
+    }
+    .main-button {
+        width: 166px;
+        height: 44px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .section-5 {
+        margin-top: 30px;
+    }
+    .count-box h1 {
+        font-size: 50px;
+        line-height: 60px;
+        color: black;
+        font-family: 'Inter-700';
+        text-transform: uppercase;
+        background: linear-gradient(to right, #ff0e47 18%, #ff8382 75%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .count-section {
+        margin-top: 30px;
+    }
+    .review-box {
+        width: 100%;
+        padding: 100px;
+        margin-top: 100px;
+        background-color: #f1eeff;
+        border-radius: 50px;
+        gap: 50px;
+    }
+    .product-main {
+        gap: 100px;
+    }
+    .product-box {
+        width: 644px;
+    }
+    .service-box {
+        width: 100%;
+        background-color: #7152fb;
+        border-radius: 50px;
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        align-items: center;
+        padding: 53px 170px;
+    }
+    .link {
+        gap: 35px;
+    }
+}
+@media (max-width: 768px) {
+    .brand-box {
+        width: 75%;
+        height: 150px;
+        position: relative;
+        bottom: 57px;
+        background-color: white;
+        flex-wrap: wrap;
+        column-gap: 28px;
+    }
+    h3 {
+        font-size: 12px;
+        line-height: 13px;
+        color: black;
+        font-family: 'Inter-400-Regular';
+    }
+    .brand-img {
+        width: 65px;
+        object-fit: contain;
+    }
+    h1 {
+        font-size: 21px;
+        line-height: 23px;
+        font-family: 'Inter-700';
+    }
+    .banner-1 {
+        width: 96px;
+        z-index: 99;
+    }
+    .banner-2 {
+        width: 95px;
+        position: relative;
+        right: 25px;
+    }
+    .mob-background-2 {
+        width: 265px;
+        height: 264px;
+    }
+    .mob-background {
+        width: 298px;
+        height: 297px;
+    }
+    .clutch-badge {
+        height: 85px;
+        position: absolute;
+        right: 38px;
+        top: 0;
+    }
+    .home-page {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 50px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column-reverse;
+        margin-top: 60px;
+    }
+    h2 {
+        font-size: 22px;
+        line-height: 28px;
+        font-family: 'Inter-800';
+    }
+    .text-box-andro {
+        padding-left: 5px !important;
+        gap: 20px;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: -0.4px;
+        line-height: 22px;
+        font-family: 'Inter-400-Regular';
+    }
+    .android-mob {
+        width: 92px;
+    }
+    .ios-mob-1 {
+        width: 95px;
+        position: relative;
+        left: 30px;
+        z-index: 99;
+    }
+    .ios-mob-2 {
+        width: 113px;
+        position: relative;
+        right: -1px;
+    }
+    .section-3 {
+        margin-top: 140px;
+    }
+    h5 {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 26px;
+    }
+    .section-4 {
+        margin-top: 190px;
+    }
+    .product-box {
+        width: 330px;
+        height: 249px;
+    }
+    .product-mob-1 {
+        height: 313px;
+        object-fit: contain;
+        position: absolute;
+        right: -44px;
+        bottom: -41px;
+    }
+    .product-mob-2 {
+        height: 313px;
+        object-fit: contain;
+        position: absolute;
+        left: -44px;
+        bottom: -41px;
+    }
+    .product-box-2 {
+        padding-left: 158px;
+        padding-right: 13px;
+    }
+    .product-box-1 {
+        padding-right: 149px;
+        padding-left: 23px;
+    }
+    .product-section h3 {
+        font-size: 20px;
+        line-height: 36px;
+    }
+    h4 {
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .service-box {
+        width: 100%;
+        background-color: #7152fb;
+        border-radius: 50px;
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        align-items: center;
+        padding: 53px 30px;
+    }
+    .fly-img {
+        width: 240px;
+    }
+    .review-box {
+        width: 100%;
+        padding: 25px;
+        margin-top: 28px;
+        background-color: #f1eeff;
+        border-radius: 50px;
+        gap: 40px;
+    }
+    .link {
+        gap: 10px;
+    }
+    .avatar-box {
+        width: 100%;
+        justify-content: center;
+        gap: 21px;
+        padding: 25px;
+    }
+    .count-box h1 {
+        font-size: 25px;
+        line-height: 42px;
+        color: black;
+        font-family: 'Inter-700';
+        text-transform: uppercase;
+        background: linear-gradient(to right, #ff0e47 18%, #ff8382 75%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .count-box p {
+        font-size: 12px;
+        line-height: 43px;
+        color: #b3b3b3;
+        font-family: 'Inter-400-Regular';
+    }
+    .stack-wrap {
+        width: 70px;
+    }
+    .line {
+        width: 20px;
+        height: 2px;
+        line-height: 106px;
+        background-color: #b3b3b3;
+        transform: rotate(110deg);
+        z-index: 999999;
+        position: relative;
+        bottom: 34px;
+    }
+    .cert-img {
+        width: 60px;
+    }
+}
+@media (max-width: 567px) {
+    .product-box {
+        width: 320px;
+        height: 249px;
+    }
+    .brand-img {
+        width: 60px;
+        object-fit: contain;
+    }
+    .brand-box {
+        width: 75%;
+        height: 96px;
+        position: relative;
+        bottom: 31px;
+        background-color: white;
+        flex-wrap: wrap;
+        column-gap: 24px;
+    }
+    .product-section h3 {
+        font-size: 16px;
+        line-height: 36px;
+    }
+    .section-4 {
+        margin-top: 61px;
+    }
+    .section-3 {
+        margin-top: 40px;
+    }
+    .home-btn {
+        margin-top: 10px !important;
+    }
+    h1 {
+        font-size: 18px;
+        line-height: 19px;
+        font-family: 'Inter-700';
+    }
+    .navbar-brand {
+        font-size: 25px !important;
+        color: #5d39fa;
+    }
+    .stack-section {
+        margin-top: 30px;
+    }
+}
